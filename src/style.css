@@ -67,6 +67,7 @@ body {
 .btn {
   display: block;
   color: #fff;
+  border: 2px solid var(--primary-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -76,6 +77,13 @@ body {
   text-decoration: none;
   padding: 10px;
   background-color: var(--primary-color);
+
+  transition: all 100ms ease-in-out;
+}
+
+.btn:hover {
+  color: var(--primary-color);
+  background-color: #fff;
 }
 
 section {
@@ -135,6 +143,12 @@ header a {
   text-decoration: none;
   text-transform: uppercase;
   background-color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+header a:hover {
+  color: var(--primary-color);
+  background-color: #fff;
 }
 
 main {
@@ -228,6 +242,11 @@ footer li {
 footer a {
   color: #fff;
   opacity: 0.7;
+  transition: all 100ms ease-in-out;
+}
+
+footer a:hover {
+  color: var(--primary-color);
 }
 
 @media (max-width: 960px) {
