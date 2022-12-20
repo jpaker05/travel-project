@@ -1,6 +1,10 @@
+:root {
+  --primary-color: #526d2e;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  background: #272044;
+  background: var(--primary-color);
 }
 
 .container {
@@ -19,6 +23,7 @@ body {
 
 .img-responsive {
   width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -70,7 +75,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px;
-  background-color: #272044;
+  background-color: var(--primary-color);
 }
 
 section {
@@ -85,7 +90,7 @@ section.secondary {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-    url("../images/bg.png");
+    url("../images/dublin-quarters-bg.jpg");
   background-repeat: no repeat;
   background-size: cover;
   color: #fff;
@@ -96,6 +101,7 @@ header {
 header h1 {
   font-weight: 700;
   font-size: 96px;
+
   line-height: 1;
   margin: 0;
 }
@@ -121,14 +127,14 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #272044;
+  color: #fff;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: #fff;
+  background-color: var(--primary-color);
 }
 
 main {
@@ -150,7 +156,7 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
-  color: #272044;
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -158,15 +164,16 @@ main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
-  color: #272044;
+  color: var(--primary-color);
   margin: 0;
+  margin-top: 20px;
 }
 
 main h5 {
   font-weight: 700;
   font-size: 13px;
   line-height: 1;
-  color: #272044;
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -178,13 +185,14 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
+
+li {
+  list-style: none;
+}
 footer {
   color: #fff;
-  background-image: linear-gradient(
-      rgba(39, 32, 68, 0.9),
-      rgba(39, 32, 68, 0.9)
-    ),
-    url("../images/bg2.png");
+  background-image: linear-gradient(rgba(14, 22, 0, 0.9), rgba(14, 22, 0, 0.9)),
+    url("../images/christ-church.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
